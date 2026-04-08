@@ -22,16 +22,18 @@ app.post('/send-email', async (req, res) => {
   const { name, email, subject, message } = req.body;
 
   try {
-    //transporteur
-const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
+    // Transporteur
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      family: 4, // ✅ force IPv4 (Render bloque IPv6)
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+
     // Email
     const mailOptions = {
       from: `"${name}" <${process.env.EMAIL_USER}>`,
