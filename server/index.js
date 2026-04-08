@@ -61,4 +61,3 @@ app.post('/send-email', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`✅ Serveur tourne sur le port ${PORT}`);
 });
-console.error("❌ Erreur complète:", error);
