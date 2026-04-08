@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Mail, Phone, MapPin, Github, Linkedin, Send, Loader2, CheckCircle, XCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle, XCircle } from "lucide-react";
 
 export function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -181,7 +181,7 @@ export function Contact() {
                   <a href="https://www.linkedin.com/in/noeliarimanana-jose-ricardo-1a281939b/" className="p-3 rounded-full bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/20 hover:border-cyan-500/40 transition-all hover:scale-110">
                     <Linkedin className="w-5 h-5 text-cyan-500" />
                   </a>
-                  <a className="p-3 rounded-full bg-green-500/10 hover:bg-green-500/20 border border-green-500/20 hover:border-green-500/40 transition-all hover:scale-110">
+                  <a href="mailto:hei.rickardo@gmail.com" className="p-3 rounded-full bg-green-500/10 hover:bg-green-500/20 border border-green-500/20 hover:border-green-500/40 transition-all hover:scale-110">
                     <Mail className="w-5 h-5 text-green-500" />
                   </a>
                 </div>
