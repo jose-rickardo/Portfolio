@@ -1,4 +1,3 @@
-// vanta.d.ts  (à la racine du projet ou dans src/types/vanta.d.ts)
 
 declare module 'vanta/dist/vanta.net.min';
 declare module 'vanta/dist/vanta.birds.min';
@@ -13,4 +12,3 @@ declare module 'vanta/dist/vanta.rings.min';
 declare module 'vanta/dist/vanta.ripple.min';
 declare module 'vanta/dist/vanta.topology.min';
 declare module 'vanta/dist/vanta.trunk.min';
-// Ajoute les autres effets si tu en utilises d'autres
