@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import NET from 'vanta/dist/vanta.net.min';
 import image1 from "../assets/Gemini_Generated_Image_yylrtjyylrtjyylr.png";
+import cv from "../assets/cv.pdf";
 
 export function Home() {
   const vantaRef = useRef<HTMLDivElement>(null);
@@ -99,7 +100,7 @@ export function Home() {
       </div>
 
       <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-6 w-full max-w-xs sm:w-auto">
-        <a href="src/assets/cv.pdf" className="text-center px-6 py-3 rounded-2xl font-semibold text-black text-sm bg-gradient-to-r from-cyan-400 to-green-400 hover:from-green-400 hover:to-cyan-400 transition duration-150">
+        <a href={cv} target="_blank" rel="noopener noreferrer" className="text-center px-6 py-3 rounded-2xl font-semibold text-black text-sm bg-gradient-to-r from-cyan-400 to-green-400 hover:from-green-400 hover:to-cyan-400 transition duration-150">
           Télécharger le CV
         </a>
         <a href="#about" className="text-center px-6 py-3 rounded-2xl font-semibold text-black text-sm bg-gradient-to-l from-cyan-400 to-green-400 hover:from-green-400 hover:to-cyan-400 transition duration-150">

@@ -2,6 +2,7 @@ import "../index.css"
 import { Menu, X } from "lucide-react"
 import { useState, useEffect } from "react"
 import image1 from "../assets/logoPro.png";
+import cv from "../assets/cv.pdf";
 
 export function NavBar() {
     const [isOpen, setIsOpen] = useState(false)
@@ -60,7 +61,7 @@ export function NavBar() {
 
                         <li>
                             <a
-                                href="src/assets/cv.pdf"
+                                href={cv}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-6 py-2 text-black font-bold text-sm rounded-md bg-gradient-to-t from-green-500 to-cyan-500 hover:from-green-400 hover:to-cyan-400 transition"
