@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import NET from 'vanta/dist/vanta.net.min';
+import image1 from "../assets/Gemini_Generated_Image_yylrtjyylrtjyylr.png";
 
 export function Home (){
   const vantaRef = useRef<HTMLDivElement>(null);
@@ -95,7 +96,7 @@ export function Home (){
       <div className="grid grid-cols-1 gap-5 md:grid-cols-3 text-white w-2/4">
         
         <img
-          src="src/assets/Gemini_Generated_Image_yylrtjyylrtjyylr.png"
+          src={image1}
           alt=""
           className="col-span-1 block border-2 p-1 rounded-2xl"
         />

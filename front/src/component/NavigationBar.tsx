@@ -1,6 +1,7 @@
 import "../index.css"
 import { Menu, X } from "lucide-react"
 import { useState, useEffect } from "react"
+import image1 from "../assets/logoPro.png";
 
 export function NavBar() {
     const [isOpen, setIsOpen] = useState(false)
@@ -34,7 +35,7 @@ export function NavBar() {
             >
                 <nav className="max-w-6xl mx-auto flex justify-between items-center p-3">
                     <a href="#home">
-                        <img src="/src/assets/logoPro.png" alt="logo" className="w-10 lg:w-12" />
+                        <img src={image1} alt="logo" className="w-10 lg:w-12" />
                     </a>
 
                     <button

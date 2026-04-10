@@ -3,12 +3,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import one from "../assets/one.png";
+import voyage from "../assets/ereur.png";
+import pokedex from "../assets/pokedex.png";
+import tracker from "../assets/ereur.png";
+import barca from "../assets/ereur.png";
+
 const projects = [
-    { name:'Boblido', img:'src/assets/one.png', description:'Un jeu de typing test pour améliorer votre vitesse.', href:'https://jose-rickardo.github.io/boblido/' },
-    { name:'Voyage', img:'src/assets/voyage.png', description:'Plateforme de réservation de voyages.', href:'#'},
-    { name:'Pokedex', img:'src/assets/pokedex.png', description:'Recherche et visualisation de Pokémon via API.', href:'https://preojet-deux.vercel.app/'},
-    { name:'Expense Tracker', img:'src/assets/tracker.png', description:'Gestionnaire de finances personnelles.', href:'#' },
-    { name:'Barça', img:'src/assets/barca.png', description:'Mon tout premier site dédié au FC Barcelone.', href:''}
+    { name:'Boblido', img: one, description:'Un jeu de typing test...', href:'https://jose-rickardo.github.io/boblido/' },
+    { name:'Voyage', img: voyage, description:'Plateforme de réservation...', href:'#'},
+    { name:'Pokedex', img: pokedex, description:'Recherche Pokémon...', href:'https://preojet-deux.vercel.app/'},
+    { name:'Expense Tracker', img: tracker, description:'Gestionnaire...', href:'#' },
+    { name:'Barça', img: barca, description:'Mon premier site...', href:''}
 ];
 
 export function Projects(){

@@ -1,6 +1,6 @@
 import { Activity, User, MapPin, GraduationCap } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-
+import image1 from "../assets/6ece8d0a-3287-435d-89f1-7ca06979edd6.jpeg";
 export function About()
 {
     const sectionRef = useRef<HTMLDivElement>(null);
@@ -49,7 +49,7 @@ export function About()
                     ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
                 >
                     <img 
-                        src="src/assets/6ece8d0a-3287-435d-89f1-7ca06979edd6.jpeg" 
+                        src={image1} 
                         alt="" 
                         className="h-20 rounded-2xl absolute -top-10"
                     />
