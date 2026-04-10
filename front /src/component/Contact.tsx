@@ -22,7 +22,7 @@ export function Contact() {
       ([entry]) => {
         if (entry.isIntersecting && !isVisible) {
           setIsVisible(true);
-          observer.disconnect(); // Une seule fois
+          observer.disconnect();
         }
       },
       { threshold: 0.25 }
