@@ -44,7 +44,7 @@ export default function Formation(){
                 {/* SCOLARITÉ */}
                 <div className={`style_card p-10 border-2 border-cyan-400 translate-y-0 transition-all duration-700
                     ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                    <h1>SCLOLARITÉ</h1>
+                    <h1>SCOLARITÉ</h1>
                     <h2>Au LSPC Ambohipo</h2>
                     <h3>Année 2009-2024</h3>
                 </div>
@@ -52,15 +52,15 @@ export default function Formation(){
                 {/* BACC */}
                 <div className={`style_card p-10 border-2 border-emerald-400 translate-y-0 md:translate-y-20 transition-all duration-700
                     ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                    <h1>BACC LOREAT SERI D</h1>
-                    <h2>Au LSPC Ambphipo</h2>
+                    <h1>BACCALAURÉAT SERI D</h1>
+                    <h2>Au LSPC Ambohipo</h2>
                     <h3>Année 2024</h3>
                 </div>
 
                 {/* L1 */}
                 <div className={`style_card p-10 border-2 border-cyan-400 translate-y-0 transition-all duration-700
                     ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                    <h1>PARCOURE ACADEMIQUE</h1>
+                    <h1>PARCOURS ACADEMIQUE</h1>
                     <h2>L1 Chez HEI Ivandry</h2>
                     <h2>Année 2024-2025</h2>
                 </div>
@@ -71,7 +71,7 @@ export default function Formation(){
                     
                     <div className="bg-black w-full h-full p-9 rounded-[7px]">
 
-                        <h1>PARCOURE ACADEMIQUE</h1>
+                        <h1>PARCOURS ACADEMIQUE</h1>
                         <h2>L2 Chez HEI Ivandry</h2>
                         <h2>Année 2025-2026</h2>
 
