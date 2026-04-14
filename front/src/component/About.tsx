@@ -59,7 +59,7 @@ export function About()
 
                     <User className="text-cyan-400 mt-6" />
                     <h3><strong>nom et prenoms :</strong> NOELIARIMANANA jose rickardo</h3>
-                    <h3><strong>neé le </strong> 25 decembre 2007 à farafangana</h3>
+                    <h3><strong>née le </strong> 25 decembre 2007 à farafangana</h3>
 
                     <GraduationCap className="text-emerald-400 mt-6" />
                     <h3><strong>en Formation </strong>à HEI Madagascar</h3>
