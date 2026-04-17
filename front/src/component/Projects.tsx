@@ -4,18 +4,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import one from "../assets/one.png";
-import voyage from "../assets/ereur.png";
+import voyage from "../assets/voyage.png";
 import pokedex from "../assets/pokedex.png";
 import tracker from "../assets/ereur.png";
 import barca from "../assets/ereur.png";
-
+import heiAdmin from "../assets/heiAdmin.png";
 const projects = [
     { name:'Boblido', img: one, description:'Un jeu de typing test...', href:'https://jose-rickardo.github.io/boblido/' },
     { name:'Voyage', img: voyage, description:'Plateforme de réservation...', href:'https://voyage-web-1.vercel.app/'},
     { name:'Pokedex', img: pokedex, description:'Recherche Pokémon...', href:'https://preojet-deux.vercel.app/'},
     { name:'Expense Tracker', img: tracker, description:'Gestionnaire...', href:'#' },
     { name:'Barça', img: barca, description:'Mon premier site...', href:''},
-    {name:'HEI Admin', img: '', description:'une copie du admin de hei pour les étudiants...', href:'https://hei-admin-static-web-1-rne6.vercel.app/'},
+    {name:'HEI Admin', img: heiAdmin, description:'une copie du admin de hei pour les étudiants...', href:'https://hei-admin-static-web-1-rne6.vercel.app/'},
 ];
 
 export function Projects(){
