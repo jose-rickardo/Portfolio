@@ -14,7 +14,7 @@ const projects = [
     { name:'Voyage', img: voyage, description:'Plateforme de réservation...', href:'https://voyage-web-1.vercel.app/'},
     { name:'Pokedex', img: pokedex, description:'Recherche Pokémon...', href:'https://preojet-deux.vercel.app/'},
     { name:'Expense Tracker', img: tracker, description:'Gestionnaire...', href:'#' },
-    { name:'Barça', img: barca, description:'Mon premier site...', href:''},
+    { name:'Barça', img: barca, description:'Mon premier site...', href:'#'},
     {name:'HEI Admin', img: heiAdmin, description:'une copie du admin de hei pour les étudiants...', href:'https://hei-admin-static-web-1-rne6.vercel.app/'},
 ];
 
