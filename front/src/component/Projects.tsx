@@ -11,10 +11,11 @@ import barca from "../assets/ereur.png";
 
 const projects = [
     { name:'Boblido', img: one, description:'Un jeu de typing test...', href:'https://jose-rickardo.github.io/boblido/' },
-    { name:'Voyage', img: voyage, description:'Plateforme de réservation...', href:'#'},
+    { name:'Voyage', img: voyage, description:'Plateforme de réservation...', href:'https://voyage-web-1.vercel.app/'},
     { name:'Pokedex', img: pokedex, description:'Recherche Pokémon...', href:'https://preojet-deux.vercel.app/'},
     { name:'Expense Tracker', img: tracker, description:'Gestionnaire...', href:'#' },
-    { name:'Barça', img: barca, description:'Mon premier site...', href:''}
+    { name:'Barça', img: barca, description:'Mon premier site...', href:''},
+    {name:'HEI Admin', img: '', description:'une copie du admin de hei pour les étudiants...', href:'https://hei-admin-static-web-1-rne6.vercel.app/'},
 ];
 
 export function Projects(){
