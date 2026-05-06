@@ -67,7 +67,7 @@ export function About()
 
                     <MapPin className="text-cyan-500 mt-6" />
                     <h3><strong>localisation: </strong> ville d'antanarivo</h3>
-                    <h3><strong>pay:</strong> MADAGASCAR</h3>
+                    <h3><strong>pays:</strong> MADAGASCAR</h3>
 
                     <Activity className="text-emerald-500 mt-6" />
                     <h3><strong>autre activiter: </strong> boxer en ckickboxing et K-1</h3>
