@@ -58,8 +58,8 @@ export function NavBar() {
                                 </a>
                             </li>
                         ))}
-
-                        <li>
+                    </ul>
+                           <li>
                             <a
                                 href={cv}
                                 target="_blank"
@@ -69,7 +69,6 @@ export function NavBar() {
                                 CV
                             </a>
                         </li>
-                    </ul>
                 </nav>
             </header>
 

@@ -13,9 +13,9 @@ export function Footer() {
       <div className="absolute top-0 left-1/4 w-32 h-32 bg-green-500/5 rounded-full blur-xl"></div>
       <div className="absolute bottom-0 right-1/4 w-24 h-24 bg-cyan-500/5 rounded-full blur-xl"></div>
 
-      <div className="container mx-auto px-6 py-12 relative">
+      <div className="container mx-auto px-10 py-12 relative">
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 ">
 
           {/* Informations personnelles */}
           <div>
@@ -24,7 +24,7 @@ export function Footer() {
             </h3>
 
             <p className="text-gray-400 mb-4">
-              Développeur Web Full Stack passionné par l'innovation et les technologies modernes.
+              Développeur passionné par l'innovation et les technologies modernes.
             </p>
 
             <div className="space-x-2">
@@ -54,7 +54,7 @@ export function Footer() {
                 À Propos
               </a>
 
-              <a href="formation" className="block text-gray-400 hover:text-cyan-500 transition hover:scale-105 transform">
+              <a href="#formation" className="block text-gray-400 hover:text-cyan-500 transition hover:scale-105 transform">
                 Formation
               </a>
 
@@ -94,7 +94,7 @@ export function Footer() {
                   <Linkedin className="w-5 h-5 hover:text-cyan-500 transition" />
                 </a>
 
-                <a href="#" className="p-2 rounded-full bg-[#1b1b1b] hover:bg-green-500/10 border border-green-500/20 hover:border-green-500/40 transition transform hover:scale-110">
+                <a href="mailto:hei.rickardo@gmail.com" className="p-2 rounded-full bg-[#1b1b1b] hover:bg-green-500/10 border border-green-500/20 hover:border-green-500/40 transition transform hover:scale-110">
                   <Mail className="w-5 h-5 hover:text-green-500 transition" />
                 </a>
 

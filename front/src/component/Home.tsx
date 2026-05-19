@@ -5,74 +5,10 @@ import image1 from "../assets/Gemini_Generated_Image_yylrtjyylrtjyylr.png";
 import cv from "../assets/cv.pdf";
 
 export function Home() {
-  const vantaRef = useRef<HTMLDivElement>(null);
-  const [vantaEffect, setVantaEffect] = useState<any>(null);
-  const [displayText, setDisplayText] = useState<string>('');
-
-  useEffect(() => {
-    if (!vantaEffect && vantaRef.current) {
-      setVantaEffect(
-        NET({
-          el: vantaRef.current,
-          THREE,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200,
-          minWidth: 200,
-          scale: 1,
-          scaleMobile: 1,
-          color: 0x00ff88,
-          backgroundColor: 0x0,
-          points: 12,
-          maxDistance: 25,
-          spacing: 18,
-          showDots: true,
-        })
-      );
-    }
-    return () => { if (vantaEffect) vantaEffect.destroy(); };
-  }, [vantaEffect]);
-
-  useEffect(() => {
-    const texts = ["BIENVENUE", "JOSE RICKARDO"];
-    let textIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let timeoutId: NodeJS.Timeout | null = null;
-
-    const typeWriter = () => {
-      const currentText = texts[textIndex];
-      if (isDeleting) {
-        setDisplayText(currentText.substring(0, charIndex));
-        charIndex--;
-        if (charIndex < 0) {
-          isDeleting = false;
-          textIndex = (textIndex + 1) % texts.length;
-          charIndex = 0;
-          timeoutId = setTimeout(typeWriter, 700);
-          return;
-        }
-      } else {
-        setDisplayText(currentText.substring(0, charIndex + 1));
-        charIndex++;
-        if (charIndex === currentText.length) {
-          isDeleting = true;
-          timeoutId = setTimeout(typeWriter, 1800);
-          return;
-        }
-      }
-      timeoutId = setTimeout(typeWriter, isDeleting ? 35 : 75);
-    };
-
-    timeoutId = setTimeout(typeWriter, 800);
-    return () => { if (timeoutId) clearTimeout(timeoutId); };
-  }, []);
-
+  
   return (
     <div
       id="home"
-      ref={vantaRef}
       className="relative w-full min-h-screen flex flex-col items-center justify-center bg-black px-4 sm:px-8 lg:px-20 py-16"
     >
       <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10 w-full max-w-3xl">
@@ -85,13 +21,11 @@ export function Home() {
 
         <div className="flex flex-col gap-2 text-white text-center sm:text-left">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold m-0 flex items-center justify-center sm:justify-start flex-wrap gap-1">
-            <span className="bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text text-transparent">
-              {displayText}
+            <span className="bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text text-transparent">Jose Rickardo Noeliarimanana
             </span>
-            <span className="text-white animate-pulse leading-none">|</span>
           </h1>
           <h2 className="text-lg sm:text-xl md:text-2xl font-normal m-0">
-            Developer Web Full Stack
+            DÉVELOPPEUR
           </h2>
           <p className="text-sm sm:text-base text-gray-300 m-0">
             Étudiant en informatique passionné par l'innovation technologique
