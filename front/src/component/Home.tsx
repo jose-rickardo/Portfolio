@@ -1,52 +1,83 @@
-import React, { useEffect, useRef, useState } from 'react';
-import * as THREE from 'three';
-import NET from 'vanta/dist/vanta.net.min';
 import image1 from "../assets/Gemini_Generated_Image_yylrtjyylrtjyylr.png";
 import cv from "../assets/cv.pdf";
 
 export function Home() {
-  
   return (
     <div
       id="home"
-      className="relative w-full min-h-screen flex flex-col items-center justify-center bg-black px-4 sm:px-8 lg:px-20 py-16"
+      className="relative w-full min-h-screen flex flex-col lg:flex-row items-center bg-[#0d0f14] overflow-hidden"
     >
-      <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10 w-full max-w-3xl">
 
-        <img
-          src={image1}
-          alt="Jose Rickardo"
-          className="w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 object-cover shrink-0 border-2 border-white p-1 rounded-2xl"
-        />
+      {/* ── GAUCHE ── */}
+      <div className="flex-1 w-full flex flex-col justify-center items-center lg:items-start gap-4 px-8 sm:px-14 lg:px-20 pt-20 pb-6 lg:py-0 z-10 text-center lg:text-left">
 
-        <div className="flex flex-col gap-2 text-white text-center sm:text-left">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold m-0 flex items-center justify-center sm:justify-start flex-wrap gap-1">
-            <span className="bg-gradient-to-r from-cyan-500 to-green-500 bg-clip-text text-transparent">Jose Rickardo Noeliarimanana
-            </span>
-          </h1>
-          <h2 className="text-lg sm:text-xl md:text-2xl font-normal m-0">
-            DÉVELOPPEUR
-          </h2>
-          <p className="text-sm sm:text-base text-gray-300 m-0">
-            Étudiant en informatique passionné par l'innovation technologique
-          </p>
+        <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-none">
+          Bonjour<span className="text-cyan-400">.</span>
+        </h1>
+
+        <div className="flex items-center gap-3">
+          <span className="w-8 h-[2px] bg-gradient-to-r from-cyan-400 to-green-400 rounded" />
+          <span className="text-gray-400 text-sm font-light">je suis  <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
+           Jose Rickardo</span></span>
+        </div>
+
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+          Développeur
+        </h2>
+
+        <p className="text-sm text-gray-500 font-light leading-relaxed max-w-sm">
+          Étudiant en informatique passionné par l'innovation technologique
+        </p>
+
+        <div className="flex gap-3 flex-wrap justify-center lg:justify-start">
+          <a
+            href={cv}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2.5 rounded-lg text-sm font-semibold text-black bg-gradient-to-r from-cyan-400 to-green-400 hover:opacity-90 transition"
+          >
+            Télécharger le CV
+          </a>
+          <a
+            href="#about"
+            className="px-6 py-2.5 rounded-lg text-sm font-medium text-gray-300 border border-white/15 hover:border-white/30 hover:text-white transition"
+          >
+            À propos
+          </a>
         </div>
       </div>
 
-      <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-6 w-full max-w-xs sm:w-auto">
-        <a href={cv} target="_blank" rel="noopener noreferrer" className="text-center px-6 py-3 rounded-2xl font-semibold text-black text-sm bg-gradient-to-r from-cyan-400 to-green-400 hover:from-green-400 hover:to-cyan-400 transition duration-150">
-          Télécharger le CV
-        </a>
-        <a href="#about" className="text-center px-6 py-3 rounded-2xl font-semibold text-black text-sm bg-gradient-to-l from-cyan-400 to-green-400 hover:from-green-400 hover:to-cyan-400 transition duration-150">
-          À propos
-        </a>
+      {/* ── DROITE ── */}
+      <div className="flex-1 w-full flex items-center justify-center relative min-h-[320px] lg:min-h-screen">
+
+        {/* Cercles décoratifs centrés */}
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] lg:w-[360px] lg:h-[360px] rounded-full border border-cyan-500/20 bg-gradient-to-br from-cyan-500/5 to-green-500/5" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[210px] h-[210px] lg:w-[270px] lg:h-[270px] rounded-full border border-green-500/10" />
+
+        {/* Symboles déco */}
+        <span className="absolute top-1/2 -translate-y-1/2 left-4 text-3xl font-bold text-cyan-500/20 select-none">&lt;</span>
+        <span className="absolute top-1/2 -translate-y-1/2 right-4 text-2xl font-bold text-green-500/20 select-none">&gt;</span>
+
+        {/* Photo centrée */}
+        <div className="relative z-10 w-[200px] sm:w-[240px] lg:w-[280px] overflow-hidden rounded-[120px]">
+          <img
+            src={image1}
+            alt="Jose Rickardo"
+            className="w-full h-full object-cover object-top"
+            style={{ minHeight: '300px' }}
+          />
+        </div>
       </div>
 
-      <a href="#about" className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white opacity-70 hover:opacity-100 transition flex flex-col items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      {/* Scroll hint */}
+      <a
+        href="#about"
+        className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-0.5 opacity-20 hover:opacity-50 transition"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth={1.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 animate-bounce opacity-60 -mt-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 animate-bounce opacity-50 -mt-2.5" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth={1.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
       </a>

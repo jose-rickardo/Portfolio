@@ -21,7 +21,7 @@ export function NavBar() {
     const itemNav = [
         { name: "Accueil", href: "#home" },
         { name: "À propos", href: "#about" },
-        { name: "Formation", href: "#formation" },
+        { name: "Parcours académique", href: "#ParcoursAcademique" },
         { name: "Compétences", href: "#skills" },
         { name: "Projets", href: "#projects" },
         { name: "Contact", href: "#contact" },
@@ -30,8 +30,7 @@ export function NavBar() {
     return (
         <>
             <header
-                className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl transition-shadow duration-300 ${
-                    scrolled ? "shadow-none" : "shadow-2xl shadow-green-500"
+                className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl transition-shadow duration-300
                 }`}
             >
                 <nav className="max-w-6xl mx-auto flex justify-between items-center p-3">
@@ -41,7 +40,7 @@ export function NavBar() {
 
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="min-[850px]:hidden text-green-500 text-3xl"
+                        className="min-[850px]:hidden text-green-500 text-3xl fixed right-5"
                         aria-label="Menu"
                     >
                         {isOpen ? <X size={32} /> : <Menu size={32} />}
@@ -64,7 +63,7 @@ export function NavBar() {
                                 href={cv}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-6 py-2 text-black font-bold text-sm rounded-md bg-gradient-to-t from-green-500 to-cyan-500 hover:from-green-400 hover:to-cyan-400 transition"
+                                className="hidden min-[850px]:block px-6 py-2 text-black font-bold text-sm rounded-md bg-gradient-to-t from-green-500 to-cyan-500 hover:from-green-400 hover:to-cyan-400 transition"
                             >
                                 CV
                             </a>
@@ -98,7 +97,7 @@ export function NavBar() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsOpen(false)}
-                    className="px-8 py-3 text-black font-bold rounded-md bg-gradient-to-t from-green-500 to-cyan-500 hover:from-green-400 hover:to-cyan-400 transition"
+                    className="px-8 py-3 text-black font-bold rounded-md bg-gradient-to-t from-green-500 to-cyan-500 hover:from-green-400 hover:to-cyan-400 transition block"
                 >
                     CV
                 </a>

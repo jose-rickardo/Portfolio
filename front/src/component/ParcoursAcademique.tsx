@@ -64,7 +64,7 @@ export default function Formation() {
 
   return (
     <div
-      id="formation"
+      id="ParcoursAcademique"
       ref={sectionRef}
       className="flex flex-col items-center bg-gradient-to-br from-[#1b1b1b] via-black to-[#1b1b1b] py-24 px-6"
     >
@@ -72,7 +72,7 @@ export default function Formation() {
         className={`text-4xl font-bold mb-16 bg-gradient-to-r from-cyan-400 to-emerald-400 text-transparent bg-clip-text transition-all duration-1000 ease-out
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
       >
-        Formation
+        Parcours académique
       </h2>
 
       {/* Timeline */}
@@ -94,7 +94,7 @@ export default function Formation() {
               </div>
 
               {/* Card */}
-              <div className={`flex-1 bg-[#0a0a0a] border ${borderClass} rounded-xl p-5 shadow-lg ${glowClass} hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 ${current ? "glow-border" : ""}`}>
+              <div className={`flex-1 bg-[#0a0a0a] border ${borderClass} rounded-xl p-5 shadow-lg ${glowClass} hover:shadow-xl transition-all duration-300 ${current ? "glow-border" : ""}`}>
                 <div className="flex items-start justify-between flex-wrap gap-2">
                   <div>
                     <h3 className={`font-bold text-base ${colorClass}`}>{title}</h3>
@@ -104,7 +104,7 @@ export default function Formation() {
                     <span className="text-xs text-gray-500 bg-white/5 px-2 py-0.5 rounded-full">{period}</span>
                     {current && (
                       <span className="flex items-center gap-1 text-xs text-emerald-400 font-semibold">
-                        <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
+                        <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full" />
                         En cours
                       </span>
                     )}

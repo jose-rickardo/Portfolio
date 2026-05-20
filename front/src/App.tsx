@@ -4,7 +4,7 @@ import { NavBar } from './component/NavigationBar';
 import { Home } from './component/Home';
 import { About } from './component/About';
 import { Projects } from './component/Projects';
-import Formation from './component/Formation';
+import Formation from './component/ParcoursAcademique';
 import { Skills } from './component/Skills';
 import { Contact } from './component/Contact';
 import { Footer } from './component/Footer';
@@ -22,10 +22,6 @@ function App() {
   }, []);
 
   return (
-    <>
-      {showSplash ? (
-        <Hello />
-      ) : (
         <>
           <NavBar />
           <Home />
@@ -36,8 +32,6 @@ function App() {
           <Contact />
           <Footer />
         </>
-      )}
-    </>
   );
 }
 
