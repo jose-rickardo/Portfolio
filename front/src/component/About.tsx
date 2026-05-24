@@ -126,7 +126,7 @@ export function About() {
           <div className="grid grid-cols-3 gap-4">
             {[
               { value: "6+", label: "Projets" },
-              { value: "2 ans", label: "Expérience" },
+              { value: "0 ans", label: "Expérience Profe" },
               { value: "10+", label: "Technos" },
             ].map(({ value, label }) => (
               <div key={label} className="bg-[#0a0a0a] border border-cyan-500/20 rounded-xl p-4 text-center hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1">
@@ -143,7 +143,7 @@ export function About() {
             Me contacter
             <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
-        </div>
+        </div>https://rickardo.vercel.app/
       </div>
     </div>
   );

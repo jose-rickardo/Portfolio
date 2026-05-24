@@ -36,10 +36,14 @@ export function Skills() {
       title: "Backend",
       icon: Database,
       skills: [
-        { name: "Node.js", level: 50 },
-        { name: "Express.js", level: 40 },
+        { name: "Node.js", level: 40 },
+        { name: "Express.js", level: 34 },
         { name: "MySQL", level: 60 },
         { name: "PostgreSQL", level: 60 },
+        {name: "Spring boot", level: 35 },
+        {name: "FastAPI", level: 30 },
+        {name: "langage C", level: 20 },
+        {name: "langage Java", level: 30 }
       ],
     },
     {
@@ -55,6 +59,9 @@ export function Skills() {
       skills: [
         { name: "Git / GitHub", level: 75 },
         { name: "Linux", level: 56 },
+        { name: "vscode", level: 30 },
+        { name: "Postman", level: 20 },
+        { name: "intellij", level: 30 },
       ],
     },
   ];
